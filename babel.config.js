@@ -3,6 +3,8 @@ module.exports = function (api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
+      '@babel/transform-react-jsx-source',
+      'babel-plugin-transform-typescript-metadata',
       [
         'module-resolver',
         {
@@ -11,7 +13,7 @@ module.exports = function (api) {
           },
         },
       ],
-      // 'nativewind/babel',
+      'nativewind/babel',
       // 'react-native-reanimated/plugin',
     ],
   };

@@ -1,4 +1,6 @@
-import { registerRootComponent } from 'expo'
-import { App } from './src/app'
+import 'reflect-metadata';
 
-registerRootComponent(App)
+import { registerRootComponent } from 'expo';
+import { App } from './src/app';
+
+registerRootComponent(App);
